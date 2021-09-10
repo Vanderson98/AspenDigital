@@ -1,0 +1,577 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* FORMATAÇÃO MENU */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#primeiro-principal h1 {
+  color: #fff;
+  font-size: 22px;
+}
+
+#cinza {
+  color: #a9a9a9;
+}
+
+/* IMAGEM PRINCIPAL 1 */
+
+#primeiro-principal a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#primeiro-principal a:hover {
+  background: rgba(128, 128, 128, 0.5);
+}
+
+#primeiro-principal {
+  position: relative;
+  background-repeat: no-repeat;
+  height: 540px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#primeiro-principal {
+  background-image: url(../img/photo-background1.jpg);
+}
+
+/* FORMATAÇÃO SECUNDARIO */
+#segundo-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+#segundo-principal h1 {
+  color: #00bfff;
+  font-weight: 400;
+}
+
+#segundo-principal p {
+  width: 50%;
+  text-align: center;
+  margin: 15px;
+}
+
+#imagem-secundaria {
+  width: 25%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+#imagem-secundaria img {
+  object-fit: cover;
+}
+
+/* FORMATAÇÃO TERCEIRO */
+#terceiro-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 50px;
+  background: #00bfff;
+}
+
+#terceiro-principal h1 {
+  color: #fff;
+  font-weight: 400;
+}
+
+#terceiro-principal p {
+  width: 50%;
+  text-align: center;
+  margin: 15px;
+  color: #fff;
+}
+
+/* FORMATAÇÃO CARTÕES TERCEIROS */
+#cartoes {
+  margin-top: 50px;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+#cartao {
+  background: #fff;
+  border-radius: 15px;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cartao:hover {
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
+  transition: 250ms;
+  box-sizing: border-box;
+}
+
+#cartao h1 {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#cartao h2 {
+  color: #00bfff;
+  font-size: 48px;
+  letter-spacing: 5px;
+  text-align: justify;
+}
+
+#cartao p {
+  color: #000;
+  width: 100%;
+}
+
+#cartao hr {
+  border: 1px solid #c0c0c0;
+  width: 100%;
+  border-radius: 20px;
+}
+
+#money {
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+#botao-cartao {
+  margin: 15px;
+}
+
+#botao-cartao a {
+  color: #fff;
+  background: #32CD32;
+  padding: 10px 50px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+#botao-cartao a:hover {
+  opacity: 1;
+  transition: 250ms;
+}
+
+/* FORMATAÇÃO QUARTO */
+#principal-quarto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+#principal-quarto h1 {
+  color: #00bfff;
+  font-weight: 400;
+}
+
+#principal-quarto p {
+  width: 50%;
+  text-align: center;
+  margin: 15px;
+}
+
+/* FORMATAÇÃO COMENTARIOS */
+#comentarios {
+  margin-top: 50px;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+#comentario {
+  border-radius: 15px;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #c0c0c0;
+}
+
+#comentario:hover {
+  box-shadow: 0px 10px 13px -7px #8a8a8a, 5px 5px 10px 5px rgba(0, 0, 0, 0);
+  transition: 250ms;
+  box-sizing: border-box;
+}
+
+#comentario p {
+  width: 90%;
+  text-align: justify;
+  padding: 5px;
+}
+
+#foto-perfil {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+}
+
+#foto-perfil h1 {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+#foto-perfil img {
+  width: 20%;
+  border-radius: 50px;
+  object-fit: cover;
+  height: auto;
+}
+
+/* FORMATAÇÃO ULTIMO */
+#principal-ultimo {
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 70px;
+  box-sizing: border-box;
+}
+
+#principal-ultimo {
+  padding: 20px;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#principal-ultimo {
+  background-image: url(../img/photo-background2.jpg);
+}
+
+#principal-ultimo p {
+  width: 80%;
+  margin: 15px;
+  text-align: center;
+}
+
+#email {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+
+#contato {
+  padding: 10px 30px;
+  background: #00bfff;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+#contato:hover {
+  opacity: 1;
+  transition: 250ms;
+  cursor: pointer;
+}
+
+#input-ultimo {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-ultimo #email {
+  width: 50%;
+  margin: 15px;
+}
+
+#input-ultimo #contato {
+  margin: 15px;
+}
+
+/* FORMATAÇÃO RODAPE */
+#rodape {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #00bfff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#rodape ul {
+  display: flex;
+}
+
+#rodape li {
+  display: flex;
+  align-items: center;
+  margin: 10px 25px;
+  justify-content: center;
+}
+
+#rodape a {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#rodape a:hover {
+  box-shadow: 0px 10px 13px -7px #000000, 50px 50px 15px 44px rgba(0, 0, 0, 0);
+  transition: 250ms;
+}
+
+#rodape h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  #cartoes {
+    width: 100%;
+    padding: 5px;
+  }
+
+
+  #cartao h1 {
+    font-size: 16px;
+  }
+
+  #comentarios {
+    width: 100%;
+    padding: 5px;
+  }
+
+  #comentario{
+    margin: 10px;
+  }
+}
+
+@media (max-width: 992px){
+  #rodape {
+    flex-direction: column;
+  }
+
+  #rodape h1 {
+    margin-top: 25px;
+  }
+
+  #rodape a {
+    padding: 25px 40px;
+    margin-top: 25px;
+  }
+
+  #cartoes {
+    flex-direction: column;
+  }
+
+  #cartao {
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  #cartao h1 {
+    font-size: 26px;
+  }
+
+  #cartao a {
+    font-size: 22px;
+  }
+
+  #comentarios {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #comentario {
+    width: 95%;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  #foto-perfil img {
+    width: 13%;
+  }
+
+  #segundo-principal p {
+    width: 90%;
+  }
+
+  #imagem-secundaria {
+    width: 50%;
+  }
+
+  #terceiro-principal p {
+    width: 90%;
+  }
+
+  #principal-quarto p {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+
+  #segundo-principal h1 {
+    font-size: 20px;
+  }
+
+  #segundo-principal p {
+    font-size: 14px;
+  }
+
+  #terceiro-principal h1 {
+    font-size: 20px;
+  }
+
+  #terceiro-principal p {
+    font-size: 14px;
+  }
+
+  #principal-quarto h1 {
+    font-size: 20px;
+  }
+
+  #principal-quarto p {
+    font-size: 14px;
+  }
+
+  #principal-ultimo h1 {
+    font-size: 18px;
+  }
+
+  #principal-ultimo p {
+    font-size: 14px;
+  }
+
+  #imagem-secundaria {
+    width: 95%;
+  }
+
+  #principal-ultimo h1 {
+    margin-top: 50px;
+  }
+
+  #principal-ultimo {
+    padding: 180px 0;
+    box-sizing: border-box;
+  }
+
+  #input-ultimo {
+    flex-direction: column;
+  }
+
+  #input-ultimo #email {
+    width: 90%;
+    padding: 20px 15px;
+  }
+
+  #input-ultimo #contato {
+    width: 90%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding: 20px 50px;
+  }
+
+  #botao-cartao a {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  #rodape ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 380px){
+  #principal-ultimo h1, #segundo-principal h1,  #principal-quarto h1{
+    text-align: center;
+  }
+
+  #principal-ultimo h1{
+    width: 90%;
+  }
+  
+  #segundo-principal p, #terceiro-principal p, #principal-ultimo p,  #principal-quarto p {
+    text-align: justify;
+  }
+
+  #cartao p, #cartao h2{
+    text-align: center;
+  }
+
+  #principal-quarto{
+    padding: 10px;
+  }
+}
